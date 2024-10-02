@@ -1,12 +1,13 @@
 html, body{
     margin-left: auto;
     margin-right: auto;
-    padding: auto;
 }
 #section1 {
     background-color: rgb(245, 240, 230);
     font-size: 28px;
     background-size: 100% 100%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #section2 {
@@ -14,10 +15,20 @@ html, body{
     color: white;
     font-size: 28px;
     background-size: 100% 100%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #section3 {
     background-color: rgb(245, 240, 230);
+    font-size: 28px;
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+#sectionp1, #sectionp2, #sectionp3 {
     font-size: 28px;
 }
 
@@ -26,10 +37,7 @@ html, body{
     display: inline-block;
     max-width: 100%;
 }
-.sectionText .section {
-    padding-left: 10px;
-    padding-right: 10px;
-}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -117,4 +125,74 @@ li a:hover {
     overflow: scroll;
     justify-content: center;
     padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    #navbar a{
+        display: none;
+    }
+    #navbar img {
+         max-width: 75%;
+    }
+    #section1,
+    #section2,
+    #section3 {
+        font-size: 24px;
+    }
+    #sectionp1,
+    #sectionp2,
+    #sectionp3 {
+        font-size: 20px;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        background-color: rgb(245, 240, 230);
+        font-size: 20px;
+    }
+        .one {
+            grid-row: 1;
+            grid-column: 1;
+            background-color: #182b49;
+            color: white;
+            max-height: 500px;
+            overflow: scroll;
+            justify-content: center;
+            padding: 10px;
+        }
+    
+        .two {
+            grid-row: 1;
+            grid-column: 2;
+            background-color: #182b49;
+            color: white;
+            max-height: 500px;
+            overflow: scroll;
+            justify-content: center;
+            padding: 10px;
+        }
+    
+        .three {
+            grid-row: 2;
+            grid-column: 1;
+            background-color: #182b49;
+            color: white;
+            max-height: 500px;
+            overflow: scroll;
+            justify-content: center;
+            padding: 10px;
+        }
+    
+        .four {
+            grid-row: 2;
+            grid-column: 2;
+            background-color: #182b49;
+            color: white;
+            max-height: 500px;
+            overflow: scroll;
+            justify-content: center;
+            padding: 10px;
+        }
 }
